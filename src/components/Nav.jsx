@@ -19,10 +19,10 @@ const Nav = () => {
                         <li><Link to="https://www.instagram.com/" alt='instagram' className="text-white" target='new' data-toggle='tooltip' data-placement='right' title='Instagram'><FaInstagram size={25}/></Link></li>
                         <li><Link to="https://codepen.io/aherrera001" className="text-white" target='new'
                         data-toggle='tooltip' data-placement='right' title='CodePen'><FaCodepen size={23}/></Link></li>
-                        <li><Link to="#" className="text-white" target='new' data-toggle='tooltip' data-placement='right' title='Git'><FaGithub size={23}/></Link></li>
+                        <li><Link to="https://github.com/websting" className="text-white" target='new' data-toggle='tooltip' data-placement='right' title='Git'><FaGithub size={23}/></Link></li>
                         <li><Link id='icons' to="mailto:anttonio.herrera@gmail.com" className="text-white"
                         data-toggle='tooltip' data-placement='right' title='Comments'><FaCommentAlt size={20}/></Link></li>
-                        <li><Link to="#" className="text-white" target='new' data-toggle='tooltip' data-placement='right' title='Hire me'><BsPersonWorkspace size={23}/></Link></li>
+                        <li><Link to="https://aherreraportfolio.netlify.app/" className="text-white" target='new' data-toggle='tooltip' data-placement='right' title='Hire me'><BsPersonWorkspace size={23}/></Link></li>
                     </ul>
                     </div>
                 </div>
