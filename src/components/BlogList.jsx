@@ -9,7 +9,6 @@ const BlogList = ({blogs}) => {
                     <h3>{blog.subtitle}</h3>
                     <p className="body-trankate">{blog.body}</p>
                     <Link className='right-arrow' to={`/blogs/${blog.id}`}><span >Keep reading &#8594;</span></Link>
-                    
                     <hr />
                 </div>
             ))}

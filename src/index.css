@@ -8,6 +8,18 @@
   padding: 20px;
 }
 
+.btn {
+  margin-left: 60px;
+  display: inline;
+  border: none;
+  font-weight: bold;
+  color: grey;
+}
+
+.btn:hover {
+  color: teal;
+}
+
 /*body truncation*/
 .body-trankate{
   text-overflow: ellipsis;
