@@ -6,11 +6,13 @@ import { useRef } from "react"; // references smooth scroll
 
 
 const BlogDetail = () => {
-    // Smooth scroll to books read section
-    const booksRef = useRef();
 
+    // Smooth scroll to books read section
+    const booksRef = useRef(null); // new
+    // access route parameter to fetch the blog with that id
     const {id} = useParams()
-    const {data: blog, isPending} = useFetch('https://websting.pythonanywhere.com/' + id);
+    // access individual blogs
+    const {data: blog, isPending} = useFetch(`https://websting.pythonanywhere.com/` + id);
 
     return ( 
         <div className="blog-detail">
@@ -19,24 +21,26 @@ const BlogDetail = () => {
                 <article>
                     <h1>{blog.title}</h1>
                     <h3>{blog.subtitle}</h3>
-                    <Link className='left-arrow' to={`/`}><span >&#8592; Back home</span></Link>
 
-                    {/* Button to books section */}
+                    {/* Top page link to home page */}
+                    <Link className='left-arrow' to={`/`} ><span >&#8592; Back home</span></Link>
+
+                    {/* Button link to books section */}
                     <button className="btn" onClick={() => {
                         booksRef.current?.scrollIntoView({
                             behaviour: 'smooth'
-                        })
-                    }}>
-                        Book Reads &#8595;
-                    </button>
-
+                            })
+                        }}>Book Reads &#8595;</button>
                     <hr />
+
+                    {/* -------- Renders detail part of blog ---------- */}
                     <p className="detail-body">{blog.body}</p>
+                    {/* Bottom page link to home page */}
                     <Link className='left-arrow' to={`/`}><span >&#8592; Back home</span></Link>
                     <hr />
-
+                    
                     {/* Book Reads section */}
-                    <div id="books" ref={booksRef}>
+                    <div ref={booksRef} id="books">
                         <p>This is the section where books add will go!</p>
                     </div>
                 </article>

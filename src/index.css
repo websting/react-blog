@@ -40,6 +40,7 @@
   color: white;
   text-decoration: none;
 }
+
 .nav-home-link:hover{
   color:teal;
 }
@@ -60,6 +61,7 @@
   color: grey;
   font-weight: bold;
 }
+
 .left-arrow:hover{
   color: teal;
 }
@@ -68,13 +70,10 @@
   text-align: justify;
   white-space: break-spaces;
 }
+
 .detail-body::first-line{
   font-style: italic;
   color:cornflowerblue
-}
-
-.contact{
-  margin-left: 35px;
 }
 
 .list-unstyled {
