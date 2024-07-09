@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Aside from "./Aside";
-
 // Main content
 const BlogList = ({ blogs }) => {
   //destructuring blogs property
@@ -30,8 +28,6 @@ const BlogList = ({ blogs }) => {
             // Card ends here
           ))}
         </div>
-        {/* Aside container content */}
-        <Aside />
       </div>
     </div>
   );
