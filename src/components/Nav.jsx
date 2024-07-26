@@ -96,7 +96,7 @@ const Nav = () => {
           <a href="#" className="navbar-brand d-flex align-items-center">
             <h4>
               <Link className="nav-home-link" to={"/"}>
-                ahBlogs
+                webDevBlog
               </Link>
             </h4>
           </a>

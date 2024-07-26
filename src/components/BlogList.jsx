@@ -22,7 +22,7 @@ const BlogList = ({ blogs }) => {
                   <h5 className="card-title">{blog.subtitle}</h5>
                   <p className="body-trankate">{blog.body}</p>
                   <Link className="right-arrow" to={`/blogs/${blog.id}`}>
-                    <span>Keep reading &#8594;</span>
+                    <span>READ MORE &#8594;</span>
                   </Link>
                 </div>
               </div>

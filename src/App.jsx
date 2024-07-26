@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import BlogDetail from "./components/BlogDetail";
 import Aside from "./components/Aside";
+import BookReads from "./components/BookReads";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/" Component={Home} />
             <Route exact path="/blogs/:id" Component={BlogDetail} />
             <Route exact path="/components/Aside" Component={Aside} />
+            <Route exact path="/components/BookReads" Component={BookReads} />
           </Routes>
         </div>
       </div>

@@ -65,6 +65,15 @@
   color: teal;
 }
 
+/* aside styles */
+.card-text{
+  text-align: justify;
+}
+
+.bar{
+  margin-left: 15px;
+}
+
 .detail-body{
   text-align: justify;
   white-space: break-spaces;
@@ -82,5 +91,40 @@
 
 .btn {
   margin-left: 0;
+  margin-top: -3px;
 }
+
+.card-group{
+  max-width: 600px;
+  margin: auto;
+}
+
+.img-thumbnail{
+  margin: 10px;
+}
+
+.title{
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+#aside-title{
+  text-align: center;
+}
+
+#main-hr{
+  height: 4px;
+  background-color: #000;
+  border: none;
+}
+
+#feature-book{
+  text-align: center;
+}
+
+
+
 
